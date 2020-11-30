@@ -124,8 +124,7 @@ public class CalculatorTest {
 		// Act
 		calculatorUnderTest.longCalculation();
 
-		// Assert
-		// ...
+		// Assert // ...
 	}
 
 	@Test

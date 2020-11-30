@@ -5,13 +5,21 @@
 	<groupId>com.openclassrooms.testing</groupId>
 	<artifactId>calculator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<!-- <properties> <maven.compiler.source>14</maven.compiler.source> <maven.compiler.target>14</maven.compiler.target> 
+		</properties> -->
 	<properties>
+<<<<<<< HEAD
 		<dep.junit.version>5.5.2</dep.junit.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
 		<bootstrap.version>4.3.1</bootstrap.version>
 		<springboot.version>2.2.0.RELEASE</springboot.version>
+=======
+		<sonar.projectKey>devdvn_oc-testing-java-cours</sonar.projectKey>
+		<sonar.organization>devdvn</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+>>>>>>> p1ch6
 	</properties>
 
 	<parent>
@@ -63,6 +71,7 @@
 			<artifactId>assertj-core</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
@@ -82,6 +91,15 @@
 			<artifactId>webdrivermanager</artifactId>
 			<version>3.7.1</version>
 		</dependency>
+=======
+		<!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+		<dependency>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>0.8.6</version>
+		</dependency>
+
+>>>>>>> p1ch6
 	</dependencies>
 	<build>
 		<plugins>
@@ -97,6 +115,7 @@
 					</execution>
 				</executions>
 			</plugin>
+<<<<<<< HEAD
 			<plugin>
 		<groupId>org.jacoco</groupId>
 		<artifactId>jacoco-maven-plugin</artifactId>
@@ -116,6 +135,13 @@
 			</execution>
 		</executions>
 	</plugin>
+=======
+
+			<!-- <plugin> <groupId>org.jacoco</groupId> <artifactId>jacoco-maven-plugin</artifactId> 
+				<version>0.8.5</version> <executions> <execution> <goals> <goal>prepare-agent</goal> 
+				</goals> </execution> <execution> <id>report</id> <phase>test</phase> <goals> 
+				<goal>report</goal> </goals> </execution> </executions> </plugin> -->
+>>>>>>> p1ch6
 		</plugins>
 	</build>
 </project>
