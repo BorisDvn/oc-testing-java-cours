@@ -14,6 +14,7 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -53,6 +54,7 @@ public class CalculatorTest {
 	}
 
 	@Test
+	@Tag("QuatreOperations") // ce test fait partie des tests des 4 opérations de base
 	public void testAddTwoPositiveNumbers() {
 		// Arrange
 		int a = 2;
@@ -67,6 +69,7 @@ public class CalculatorTest {
 	}
 
 	@Test
+	@Tag("QuatreOperations") // ce test fait partie des tests des 4 opérations de base
 	public void multiply_shouldReturnTheProduct_ofTwoIntegers() {
 		// Arrange
 		int a = 42;
