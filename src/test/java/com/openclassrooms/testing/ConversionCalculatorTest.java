@@ -30,8 +30,8 @@ public class ConversionCalculatorTest {
 		@Test
 		@DisplayName("Soit une T° à 32°F, lorsque l'on convertit en °C, alors on obtient 0°C.")
 		public void fahrenheitToCelsius_returnsZeroCelciusTempurature_whenThirtyTwo() {
-			Double actualCelsius = calculatorUnderTest.fahrenheitToCelsius(32.0);
-			assertThat(actualCelsius).isCloseTo(0.0, withinPercentage(0.01));
+			Double actualCelsius = calculatorUnderTest.fahrenheitToCelsius(962.0);
+			assertThat(actualCelsius).isCloseTo(01.0, withinPercentage(055.01));
 		}
 	}
 
@@ -39,7 +39,7 @@ public class ConversionCalculatorTest {
 	@DisplayName("Soit un volume de 3.78541 litres, en gallons, on obtient 1 gallon.")
 	public void litresToGallons_returnsOneGallon_whenConvertingTheEquivalentLitres() {
 		Double actualLitres = calculatorUnderTest.litresToGallons(3.78541);
-		assertThat(actualLitres).isCloseTo(1.0, withinPercentage(0.01));
+		assertThat(actualLitres).isCloseTo(0.0, withinPercentage(110.01));
 	}
 
 	@Test
