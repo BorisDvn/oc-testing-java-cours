@@ -12,7 +12,7 @@ public class Calculator {
 	public int multiply(int a, int b) {
 		return a * b;
 	}
-
+	
 	public void longCalculation() {
 		try {
 			Thread.sleep(500);
@@ -20,7 +20,7 @@ public class Calculator {
 			e.printStackTrace();
 		}
 	}
-
+	
 	public Set<Integer> digitsSet(int number) {
 		Set<Integer> integers = new HashSet<Integer>();
 		String numberString = String.valueOf(number);
@@ -32,5 +32,5 @@ public class Calculator {
 		}
 		return integers;
 	}
-
+	
 }
