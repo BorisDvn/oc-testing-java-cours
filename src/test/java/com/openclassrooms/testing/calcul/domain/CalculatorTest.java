@@ -33,7 +33,7 @@ public class CalculatorTest {
 
 	private Calculator calculatorUnderTest;
 	
-	private int cacheFactorial;
+	//private int cacheFactorial;
 
 	private Logger logger;
 
@@ -174,6 +174,7 @@ public class CalculatorTest {
 	public void fact12_shouldReturnsTheCorrectAnswer() {
 		// GIVEN
 		int number = 12;
+		int cacheFactorial = 0;
 		
 		// WHEN
 		// Calculer 12! et sauve la valeur pour un autre test
@@ -188,6 +189,7 @@ public class CalculatorTest {
 	public void digitsSetOfFact12_shouldReturnsTheCorrectAnswser() {
 		// GIVEN
 		// 12! est mis en cache par le test précédent
+		int cacheFactorial = 12*11*10*9*8*7*6*5*4*3*2;
 		
 		// WHEN
 		Set<Integer> actualDigits = calculatorUnderTest.digitsSet(cacheFactorial);
