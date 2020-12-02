@@ -42,7 +42,7 @@ public class CalculatorServiceTest {
 
 		// THEN
 		//verify(calculator).add(1, 2);
-	    verify(calculator, times(5)).add(any(Integer.class), any(Integer.class));
+	    verify(calculator, times(1)).add(any(Integer.class), any(Integer.class));
 		assertThat(result).isEqualTo(3);
 	}
 	
